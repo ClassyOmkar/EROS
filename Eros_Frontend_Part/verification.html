@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Verification</title>
+    <link rel="stylesheet" href="verification/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="verification-box">
+            <h2>Verify your account</h2>
+            <p>Enter the 4-digit code we have sent you</p>
+            <form id="verificationForm">
+                <div class="input-group">
+                    <input type="text" maxlength="1" class="code-input" id="digit1" autofocus>
+                    <input type="text" maxlength="1" class="code-input" id="digit2">
+                    <input type="text" maxlength="1" class="code-input" id="digit3">
+                    <input type="text" maxlength="1" class="code-input" id="digit4">
+                </div>
+                <div class="resend">
+                    <span>Didn't receive a code?</span>
+                    <span> <a href="#" id="resendLink">Resend </a></span>
+                </div>
+                <button type="submit" id="continueButton">Continue</button>
+            </form>
+        </div>
+    </div>
+    <script src="verification/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: white;
+}
+
+.action-btn {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+.navbar {
+  position: fixed; /* Position the navbar */
+  top: 0; /* Pin it to the top of the viewport */
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 0;
+  height: 44px;
+  cursor: pointer;
+  background-color: white; /* Add background color */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.action-btn.dislike {
+  color: red;
+}
+
+.action-btn.like {
+  color: pink;
+}
+
+.action-btn.star {
+  color: purple;
+}
+.container {
+  padding-top: 64px; /* Height of the navbar (44px) + some extra space */
+}
+
+.profile-info {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-info h2 {
+  margin-bottom: 10px;
+}
+
+.profile-info .job-title,
+.profile-info .distance {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.profile-info h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.interest {
+  background-color: #ffdddd;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #ff7a7a;
+}
+
+.left-info {
+  text-align: left;
+}
+
+.right-info {
+  text-align: right;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 0;
+  height: 44px;
+  cursor: pointer;
+}
+
+.navbar a:nth-child(1) i {
+  color: #fe466d; /* Color for the first icon */
+}
+
+.navbar a:nth-child(2) i {
+  color: #2db1ff; /* Color for the second icon */
+}
+
+.navbar a:nth-child(3) i {
+  color: #1be4a1; /* Color for the third icon */
+}
+
+.navbar i:nth-of-type(4) {
+  color: #dadfe6; /* Color for the fourth icon */
+}
+
+/* Change color of search icon on hover over search input */
+.navbar i:nth-of-type(4):hover {
+  color: #ffab40; /* Change color of search icon on hover */
+}
+
+
+/* Position and style the search input */
+.search-input {
+position: fixed;
+top: 44px; /* Height of the navbar */
+right: 0;
+padding: 10px;
+width: 200px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: white;
+display: none; /* Initially hide the input */
+}
+
+/* Position and style the search results */
+.search-results {
+position: fixed;
+top: 44px; /* Height of the navbar */
+right: 220px; /* Width of the search input + some spacing */
+padding: 10px;
+width: 200px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: white;
+display: none; /* Initially hide the results */
+}
+/* Glowing effect on hover for search icon */
+.navbar i:nth-child(4):hover {
+  animation: glow 1s infinite alternate; /* Apply animation on hover */
+}
+
+@keyframes glow {
+  from {
+    color: #ffab40; /* Initial color */
+    text-shadow: 0 0 5px #ffab40, 0 0 10px #ffab40, 0 0 20px #ffab40; /* Glowing effect */
+  }
+  to {
+    color: #ffab40; /* Final color */
+    text-shadow: none; /* Remove glowing effect */
+  }
+}

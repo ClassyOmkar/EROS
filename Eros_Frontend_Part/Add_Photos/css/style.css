@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to top right, #FA3875, #feb47b);
+  }
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .profile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .profile-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .profile-nav a:hover {
+    background-color: #ddd;
+  }
+  .profile-nav hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+ 
+  .container {
+    max-width: 400px; /* Decreased width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 100px; /* Increased padding bottom for height */
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .photo-card {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .photo-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+  }
+  .photo-card a span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  button {
+    padding: 21px 100px;
+    background-color: #e680b0;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  button:hover {
+    background-color: #b0899d;
+    color:#000000
+  }
+
+
